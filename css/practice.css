@@ -1,0 +1,13 @@
+header{
+  text-align: center;
+}
+img{
+  width: 350px;
+}
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
+.sq-list{
+  list-style-type: lower-roman;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/practice.css">
+</head>
+
+<body>
+
+    <article>
+        <header>
+            <h1>Heading starts here</h1>
+            <p><i>Posted by Tohfa</i></p>
+            <hr style="width: 20%">
+            <a href="mailto:tasniatasneem7@gmail.com">Click here to send an email</a>
+        </header>
+    </article>
+    <article>
+        <!-- <iframe src="https://www.youtube.com/watch?v=ewZ_YWbIWXI" >Go to YouTube</iframe> -->
+        <img src="images/youtube.jpg" alt="youtube">
+    </article>
+
+    <article>
+        <form action="#">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            <input type="submit" value="Submit">
+            <p>
+                my fav is <del>blue</del><ins>red</ins>
+                <br>
+                Press <kbd> Ctrl</kbd> + <kbd> c</kbd> to copy
+            </p>
+            <ol>
+                <li>Coffe</li>
+                <li>Milk</li>
+                <li>Green Tea</li>
+            </ol>
+            <ol class="sq-list">
+                <li>Coffe</li>
+                <li>Milk</li>
+                <li>Green Tea</li>
+            </ol>
+            <main>
+                <article>
+                    <h1>Most Popular browsers</h1>
+                    <p>
+                        Chrome, Firefox, and Edge
+                    </p>
+                    <p>
+                        don't forget to buy <mark style="background-color: darksalmon;"> biriyani masala</mark>
+                    </p>
+                    <p>
+                        meter element is used to display a gauge
+                    </p>
+                    <label for="disk_c">Disk-Gauge_C:</label>
+                    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
+                    <label for="disk_d">Disk-Gauge_D:</label>
+                    <meter id="disk_d" value="0.9">90%</meter>
+                    <p>navigation links are provided below:</p>
+                    <nav>
+                        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    </nav>
+                    <script>
+                        document.write('hello!')
+                    </script>
+                    <noscript>
+                        sorry!js is not supported here
+                    </noscript>
+                </article>
+                <article>
+                    <object data="images/flowers.jpg" width="300"></object>
+                    <ol start="50">
+                        <li>mango</li>
+                        <li>coconut</li>
+                    </ol>
+                    <label for="cars">Choose a car:</label>
+                    <select name="cars" id="cars">
+                        <optgroup label="Swedish Cars">
+                            <option>Volvo</option>
+                            <option>saab</option>
+                        </optgroup>
+                        <optgroup label="German-Cars">
+                            <option>audi</option>
+                        </optgroup>
+                    </select>
+                    <script>
+                        function updateOutput() {
+                            var a = parseInt(document.getElementById("a").value);
+                            var b = parseInt(document.getElementById("b").value);
+                            document.getElementById("x").value = a + b;
+                        }
+                    </script>
+                    
+                    <form oninput="updateOutput()">
+                        <input type="range" id="a" value="50" min="0" max="100" step="1">
+                        +<input type="number" id="b" value="25">
+                        =<output id="x" for="a b"></output>
+                    </form>
+                </article>
+                <article>
+                    <!-- <object data="audio/horse.wav"> <param name="autoplay" value="true"></object> -->
+                    <p> alter browser size to see the changes</p>
+                    <picture>
+                        <source media="(min-width:650px)" srcset="images/img_pink_flowers.jpg">
+                        <img src="images/img_orange_flowers.jpg" alt="flowers" style="width: auto;">
+                    </picture>
+                </article>
+            </main>
+        </form>
+    </article>
+</body>
+
+</html>
