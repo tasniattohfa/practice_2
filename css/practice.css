@@ -11,3 +11,7 @@ label, input {
 .sq-list{
   list-style-type: lower-roman;
 }
+iframe{
+  display: block;
+  width: auto;
+}
